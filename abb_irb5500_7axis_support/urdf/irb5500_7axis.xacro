@@ -1,0 +1,277 @@
+<?xml version="1.0" ?>
+<robot name="irb5500_7axis" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find abb_irb5500_7axis_support)/urdf/materials.xacro" />
+<xacro:include filename="$(find abb_irb5500_7axis_support)/urdf/irb5500_7axis.trans" />
+<xacro:include filename="$(find abb_irb5500_7axis_support)/urdf/irb5500_7axis.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.018926671403852433 0.03635439701106554 0.40145852174959484" rpy="0 0 0"/>
+    <mass value="1107.0385298863"/>
+    <inertia ixx="61.225944" iyy="90.595486" izz="64.881264" ixy="-0.092907" iyz="-6.385665" ixz="0.046518"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1_1">
+  <inertial>
+    <origin xyz="0.0011555100547077264 0.24509135858373476 0.17382144663815557" rpy="0 0 0"/>
+    <mass value="514.8648420210297"/>
+    <inertia ixx="30.992741" iyy="22.570346" izz="23.26715" ixy="-0.046007" iyz="-10.318452" ixz="0.056101"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.01678 -0.29242 -0.53198" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.01678 -0.29242 -0.53198" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="0.0012491514615240729 -0.025583333888403836 0.34431214152787903" rpy="0 0 0"/>
+    <mass value="1176.3951689096798"/>
+    <inertia ixx="50.070546" iyy="64.129491" izz="51.509297" ixy="-0.026244" iyz="-1.140556" ixz="-0.030935"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018328 -0.77042 -0.929477" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018328 -0.77042 -0.929477" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3_1">
+  <inertial>
+    <origin xyz="0.0028689107223312145 0.08648406695372635 0.6879406498154552" rpy="0 0 0"/>
+    <mass value="723.6999417468929"/>
+    <inertia ixx="160.032498" iyy="163.23224" izz="8.467489" ixy="-0.024939" iyz="-2.562707" ixz="-0.618553"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.020026 -1.00142 -1.365474" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.020026 -1.00142 -1.365474" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_4_1">
+  <inertial>
+    <origin xyz="0.3972513240326173 -0.14845866938299856 -0.0010321643174204809" rpy="0 0 0"/>
+    <mass value="607.3432804807295"/>
+    <inertia ixx="6.246992" iyy="118.657638" izz="118.264451" ixy="3.559257" iyz="0.030035" ixz="0.437972"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02509 -0.98742 -2.665464" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02509 -0.98742 -2.665464" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_5_1">
+  <inertial>
+    <origin xyz="0.04510451484501843 -1.6966850335808914e-07 0.015465258143359417" rpy="0 0 0"/>
+    <mass value="13.246564877496217"/>
+    <inertia ixx="0.04349" iyy="0.02917" izz="0.036873" ixy="0.0" iyz="-0.0" ixz="-0.006399"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.466079 -0.76542 -2.659851" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.466079 -0.76542 -2.659851" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_6_1">
+  <inertial>
+    <origin xyz="0.059847742372347135 -3.194301083642159e-07 -0.022734536484888768" rpy="0 0 0"/>
+    <mass value="22.90378370207616"/>
+    <inertia ixx="0.078074" iyy="0.075709" izz="0.096705" ixy="-0.0" iyz="0.0" ixz="7.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.54048 -0.76542 -2.65612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.54048 -0.76542 -2.65612" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_7_1">
+  <inertial>
+    <origin xyz="0.027381461625446413 -4.779980121716321e-07 0.014960336074338887" rpy="0 0 0"/>
+    <mass value="11.027488801145296"/>
+    <inertia ixx="0.031573" iyy="0.022716" izz="0.028182" ixy="0.0" iyz="-0.0" ixz="0.005881"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.660351 -0.76542 -2.655653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.660351 -0.76542 -2.655653" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_8_1">
+  <inertial>
+    <origin xyz="0.004368020622074642 -0.00010515307768488302 -0.0001227284237961257" rpy="0 0 0"/>
+    <mass value="0.35749934255251287"/>
+    <inertia ixx="0.001069" iyy="0.000548" izz="0.000527" ixy="-0.0" iyz="-5e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.737286 -0.76542 -2.658795" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.737286 -0.76542 -2.658795" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://abb_irb5500_7axis_support/meshes/link_8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="temp_7"/>
+
+<joint name="joint_7" type="revolute">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="temp_7"/>
+  <child link="link_1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <mimic joint="joint_7_deg" multiplier="17.4533" offset="0"/>
+  <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
+</joint>
+
+
+<joint name="joint_1" type="revolute">
+  <origin xyz="0.001548 0.478 0.397497" rpy="0 0 0"/>
+  <parent link="link_1_1"/>
+  <child link="link_2_1"/>
+  <axis xyz="0.003895 -0.0 0.999992"/>
+  <limit upper="3.403392" lower="-0.261799" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_2" type="revolute">
+  <origin xyz="0.001698 0.231 0.435997" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="link_3_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="2.617994" lower="-1.134464" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_3" type="revolute">
+  <origin xyz="0.005064 -0.014 1.29999" rpy="0 0 0"/>
+  <parent link="link_3_1"/>
+  <child link="link_4_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="1.22173" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_4" type="revolute">
+  <origin xyz="1.440989 -0.222 -0.005613" rpy="0 0 0"/>
+  <parent link="link_4_1"/>
+  <child link="link_5_1"/>
+  <axis xyz="0.999992 -0.0 -0.003895"/>
+  <limit upper="6.0" lower="-6.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_5" type="revolute">
+  <origin xyz="0.074401 0.0 -0.003731" rpy="0 0 0"/>
+  <parent link="link_5_1"/>
+  <child link="link_6_1"/>
+  <axis xyz="0.816912 -0.0 -0.576763"/>
+  <limit upper="6.0" lower="-6.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_8" type="fixed">
+  <origin xyz="0.119871 0.0 -0.000467" rpy="0 0 0"/>
+  <parent link="link_6_1"/>
+  <child link="link_7_1"/>
+</joint>
+
+<joint name="joint_6" type="revolute">
+  <origin xyz="0.076935 0.0 0.003142" rpy="0 0 0"/>
+  <parent link="link_7_1"/>
+  <child link="link_8_1"/>
+  <axis xyz="0.999992 -0.0 -0.003895"/>
+  <limit upper="6.0" lower="-6.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_7_deg" type="revolute">
+  <origin xyz="0.01678 0.29242 0.53198" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="temp_7"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.134307342" lower="-0.134307342" effort="100" velocity="100"/>
+</joint>
+
+<link name="world"/>
+
+<joint name="world_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="0 0 0"/>
+  <parent link="world"/>
+  <child link="base_link"/>
+</joint>
+
+</robot>

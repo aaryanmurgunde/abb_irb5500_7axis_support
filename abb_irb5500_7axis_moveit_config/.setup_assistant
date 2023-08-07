@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_irb5500_7axis_support
+    relative_path: urdf/irb5500_7axis.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/irb5500_7axis.srdf
+  CONFIG:
+    author_name: Aaryan Murgunde
+    author_email: aaryan.murgunde@gmail.com
+    generated_timestamp: 1691404899
