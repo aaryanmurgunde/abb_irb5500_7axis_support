@@ -49,6 +49,15 @@
         <joint name="joint_6" value="0"/>
         <joint name="joint_7_deg" value="0"/>
     </group_state>
+    <group_state name="test" group="irb5500_7axis_arm">
+        <joint name="joint_1" value="1.0524608763731287"/>
+        <joint name="joint_2" value="-0.6988845190799001"/>
+        <joint name="joint_3" value="1.22165403685248"/>
+        <joint name="joint_4" value="1.22165403685248"/>
+        <joint name="joint_5" value="1.242740797678509"/>
+        <joint name="joint_6" value="-4.389628129091676"/>
+        <joint name="joint_7_deg" value="0.009682543500771428"/>
+    </group_state>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="joint_7"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
