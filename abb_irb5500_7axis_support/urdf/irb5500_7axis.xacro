@@ -192,16 +192,6 @@
     </geometry>
   </collision>
 </link>
-<link name="temp_7"/>
-
-<joint name="joint_7" type="revolute">
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <parent link="temp_7"/>
-  <child link="link_1_1"/>
-  <axis xyz="0.0 -1.0 0.0"/>
-  <mimic joint="joint_7_deg" multiplier="17.4533" offset="0"/>
-  <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
-</joint>
 
 
 <joint name="joint_1" type="revolute">
@@ -258,12 +248,12 @@
   <limit upper="6.0" lower="-6.0" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint_7_deg" type="revolute">
+<joint name="joint_7" type="revolute">
   <origin xyz="0.01678 0.29242 0.53198" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="temp_7"/>
+  <child link="link_1_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
-  <limit upper="0.134307342" lower="-0.134307342" effort="100" velocity="100"/>
+  <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
 </joint>
 
 <link name="world"/>
